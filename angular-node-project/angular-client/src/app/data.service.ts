@@ -11,7 +11,7 @@ export class DataService {
 
   fetchData(): Observable<any> {
     return timer(0, 1000).pipe(
-      switchMap(() => this.http.get('http://localhost:3000/api/data')) // Inclua o esquema "http://"
+      switchMap(() => this.http.get('http://localhost:3000/api/data')) 
     );
   }
   
